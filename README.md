@@ -33,8 +33,8 @@ exp ios
 - [x] Set up local Firebase project 🔥
 - [x] Write function to create a user, **Google Cloud Functions** ☁️
 - [x] Sign up for **Twilio** 📞
-- [ ] Write function to generate code and text a user
-- [ ] Write function to verify code
+- [x] Write function to generate code and text a user
+- [x] Write function to verify code
 - [ ] Attach the screenshots/gif of screens to `README.MD`
 
 ## Wireframes and project plan
@@ -42,11 +42,11 @@ exp ios
 
 <div style={{display: flex; flex-direction: row}}>
   <img  alt="wireframe1" src="screenshots/tech-stack.png" width="450" />
-  <p>Tech stack</p>
+  <p></p>
   <img  alt="wireframe2" src="screenshots/app-flow.png" width="450" />
-  <p>App flow</p>
+  <p></p>
   <img  alt="wireframe3" src="screenshots/handling-user.png" width="450" />
-  <p>App flow in details</p>
+  <p></p>
 </div>
 
 
