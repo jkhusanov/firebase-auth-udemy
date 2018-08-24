@@ -6,14 +6,14 @@ To test the client app please navigate to **firebase-auth-client-app** folder,
 To see the server side Google Cloud Functions please navigate to **one-time-password-server** folder. Note that server folder API keys are hidden, please refer to `.gitignore` file and include them with your own keys.
 
 
-### [Demo - Try it on Expo, coming soon](https://expo.io/@jkhusanov/firebase-auth-client-app)
+### [Demo - Try it on Expo](https://expo.io/@jkhusanov/firebase-auth-client-app)
 
 ## Demo, coming soon
 ![Demo gif](https://github.com/jkhusanov/firebase-auth-udemy/blob/master/screenshots/demo.gif)
 
 
 
-## Getting started
+## Getting started, with app client
 
 ```
 git clone https://github.com/jkhusanov/firebase-auth-udemy.git
@@ -35,6 +35,8 @@ exp ios
 - [x] Sign up for **Twilio** 📞
 - [x] Write function to generate code and text a user
 - [x] Write function to verify code
+- [x] Implement simple **client Sign Up** form with actual working Google Functions and SMS
+- [ ] Implement simple client **Log In** form with actual working Google Functions and SMS
 - [ ] Attach the screenshots/gif of screens to `README.MD`
 
 ## Wireframes and project plan
@@ -46,6 +48,8 @@ exp ios
   <img  alt="wireframe2" src="screenshots/app-flow.png" width="450" />
   <p></p>
   <img  alt="wireframe3" src="screenshots/handling-user.png" width="450" />
+  <p></p>
+  <img  alt="wireframe3" src="screenshots/simple-interface.png" width="450" />
   <p></p>
 </div>
 
