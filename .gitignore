@@ -2,6 +2,8 @@
 # some keys
 twilio.js
 service_account.json
+config_keys.js
+
 
 # misc
 node_modules

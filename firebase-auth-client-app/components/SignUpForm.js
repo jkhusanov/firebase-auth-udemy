@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Dimensions, Keyboard, KeyboardAvoidingView } from 'react-native';
 import { Input, Button } from 'react-native-elements'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import axios from 'axios';
-
+const SCREEN_WIDTH = Dimensions.get('window').width;
 const ROOT_URL = 'https://us-central1-one-time-password-udemy-adcc9.cloudfunctions.net'
 
 export default class SingUpForm extends React.Component {
@@ -25,28 +25,30 @@ export default class SingUpForm extends React.Component {
   render() {
     return (
       <View style={styles.containerStyle}>
-        <View style={{ marginBottom: 10 }}>
-          <Input
-            value={this.state.phone}
-            onChangeText={phone => this.setState({ phone })}
-            containerStyle={styles.container}
-            inputContainerStyle={styles.inputContainerStyle}
-            placeholder="number"
-            placeholderTextColor="black"
-            label="Input Phone Number"
-            inputStyle={{ color: 'black' }}
-            leftIcon={
-              <MaterialCommunityIcons
-                name='phone'
-                size={24}
-                color='black'
-              />
-            }
-          />
-        </View>
+
+          <View style={{ marginBottom: 10 }}>
+            <Input
+              value={this.state.phone}
+              onChangeText={phone => this.setState({ phone })}
+              containerStyle={styles.inputContainer}
+              inputContainerStyle={styles.inputElementsContainer}
+              placeholder="number"
+              label="Enter Phone Number to Sign Up"
+              inputStyle={{ color: 'black' }}
+              onSubmitEditing={Keyboard.dismiss}
+              keyboardType='phone-pad'
+              leftIcon={
+                <MaterialCommunityIcons
+                  name='phone'
+                  size={24}
+                  color='black'
+                />
+              }
+            />
+          </View>
 
         <Button
-          title="Submit"
+          title="Submit to get Code"
           onPress={this.handleSubmit}
         />
       </View>
@@ -56,15 +58,16 @@ export default class SingUpForm extends React.Component {
 
 const styles = StyleSheet.create({
   containerStyle: {
-    // flex: 1,
-    // justifyContent: 'space-around',
-    alignItems: 'center',
+    flex: 1,
+    justifyContent: 'space-around',
+    // alignItems: 'center',
   },
-  container: {
-
-
+  inputElementsContainer: {
+    width: SCREEN_WIDTH * 0.75,
+    marginVertical: 5,
   },
-  inputContainerStyle: {
-
+  inputContainer: {
+    width: SCREEN_WIDTH * 0.8,
+    marginVertical: 5,
   }
 })

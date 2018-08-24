@@ -8,8 +8,11 @@ To see the server side Google Cloud Functions please navigate to **one-time-pass
 
 ### [Demo - Try it on Expo](https://expo.io/@jkhusanov/firebase-auth-client-app)
 
-## Demo, coming soon
-![Demo gif](https://github.com/jkhusanov/firebase-auth-udemy/blob/master/screenshots/demo.gif)
+## Demo, screenshots
+<div style={{display: flex; flex-direction: row}}>
+  <img src="screenshots/1-image.png" width="270" />
+  <img src="screenshots/2-image.png" width="270" />
+</div>
 
 
 
@@ -36,8 +39,8 @@ exp ios
 - [x] Write function to generate code and text a user
 - [x] Write function to verify code
 - [x] Implement simple **client Sign Up** form with actual working Google Functions and SMS
-- [ ] Implement simple client **Log In** form with actual working Google Functions and SMS
-- [ ] Attach the screenshots/gif of screens to `README.MD`
+- [x] Implement simple client **Log In** form with actual working Google Functions and SMS
+- [x] Attach the screenshots/gif of screens to `README.MD`
 
 ## Wireframes and project plan
 
